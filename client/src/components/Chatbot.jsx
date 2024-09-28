@@ -19,7 +19,7 @@ const Chatbot = ({ categoryId }) => {
     setIsLoading(true);
 
     try {
-      const res = await axios.post(`http://localhost:5000/api/questions/${categoryId}`, {
+      const res = await axios.post(`https://csvparser-17ug.onrender.com/api/questions/${categoryId}`, {
         userMessage: message,
         step: step,  // Send the current step
         collectedInfo: collectedInfo,  // Send collected information
